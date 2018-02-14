@@ -6,7 +6,7 @@ FLAGS=-pedantic -Wall -lpthread -lm -fopenmp -DUse_Complex
 all: compile
 
 compile: src/*.cpp src/*.h
-	$(CCMACOS) $(FLAGS) -o surf src/*.cpp
+	$(CC) $(FLAGS) -o surf src/*.cpp
 
 clean:
 	rm surf
